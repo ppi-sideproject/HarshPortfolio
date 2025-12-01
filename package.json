@@ -1,0 +1,31 @@
+{
+  "name": "harshportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ppi-sideproject/HarshPortfolio#readme",
+  "bugs": {
+    "url": "https://github.com/ppi-sideproject/HarshPortfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppi-sideproject/HarshPortfolio.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
