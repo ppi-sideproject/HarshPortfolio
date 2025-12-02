@@ -5,41 +5,90 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Portfolio</title>
   <meta name="description" content="Short description of this page.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <header>
-    <h1 style="color: blue;">Harsh's Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
+  <header class="header">
+  <nav class="nav">
+      <ul class="nav__list">
+        <li ><a class="nav_link" href="#">Home</a></li>
+        <li ><a class="nav_link" href="#">About</a></li>
+        <li ><a class="nav_link" href="#">Blog</a></li>
+         <li ><a class="nav_link" href="#">Contact</a></li>
       </ul>
     </nav>
+    <h1 class="Heading">Harshvhkm</h1>
+  
+
+  <img class="acc" src="acc.jpeg" alt="Profile Picture" class="profile-pic">
+    
+ 
   </header> 
-  <main>
-    <section id="section1">
-      <h2>Section 1</h2>
-      <p>This is the first section of the page.</p>
-    </section>
+  
 
-    <section id="section2">
-      <h2>Section 2</h2>
-      <p>This is the second section of the page.</p>
-    </section>
+  <img class="hero-section" src="https://i.pinimg.com/1200x/71/77/98/7177985535ec83dc423241345facaaee.jpg" alt="Profile Picture" class="profile-pic">
 
-    <section id="section3">
-      <h2>Section 3</h2>
-      <p>This is the third section of the page.</p>
-    </section>
-  </main>
-  <div>
-    <img src="harsh.jpg" alt="Harsh's Photo" width="200" height="200">  
+  
+   <div class="intro">
+    <h2 class="H2">Hello My Name Is Harsh</h2>
+    <p class="ptag">Discover my projects, skills, and experiences in the world of web development and design.</p>  
   </div>
-  <footer>
+  
+  
+ <section class="content">
+  <div class="about">
+    <h2 class="services-heading">Our Services</h2>
+    
+    <div class="cards-container">
+      
+      <div class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Web Development Image">
+        <h3 class="card-title">Web Development</h3>
+        <p class="card-description">Web development is the process of building and maintaining websites and web applications, encompassing everything from the visual.</p>
+      </div>
+      
+      <div class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1601972602237-8c79241e468b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww" alt="Another Service Image">
+        <h3 class="card-title">Mobile Apps</h3>
+        <p class="card-description">Development of native or cross-platform applications for iOS and Android devices, focusing on performance and user experience.</p>
+      </div>
+      
+      <div class="card">
+        <img class="card-img" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="Third Service Image">
+        <h3 class="card-title">UI/UX Design</h3>
+        <p class="card-description">Creating intuitive, efficient, and aesthetically pleasing user interfaces and user experiences for digital products.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<div class="contact-section">
+ 
+ <img class="contact-image" src="https://plus.unsplash.com/premium_photo-1762757572324-dd17ad95b2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQyfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D" alt="Contact Image" class="profile-pic">  
+
+  <div class="contact-form">
+    
+  <form id="form" action="/submit_form" method="post" class="form">
+  <h2>Contact Me</h2> 
+   <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <input class="submit-button" type="submit" value="Submit">
+  </form>
+
+  </div>
+</div>
+
+  <footer class="footer">
     <p>&copy; 2025 Harsh </p>
 </footer>
+
 
   
 </body>
