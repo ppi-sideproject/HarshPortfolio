@@ -1,3 +1,6 @@
-console.log(a.slice(0,5));
-// console.log(a.replace("r","p"));
-// console.log(a.replaceAll("h","k"));
+const input = document.getElementById("username");
+
+input.addEventListener("input", (event) => {
+    event.preventDefault();
+  console.log("You typed:", input.value);
+});
