@@ -3,13 +3,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+
+  
 }
 
-.H2 {
+.H2{
   font-size: 40px;
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
+.ptag{
+  color: rgb(255, 255, 255);
+}
+
 
 .header {
   position: fixed;
@@ -21,10 +27,25 @@ body {
   padding-left: 30px;
   width: 98%;
   margin: auto;
+  animation: fade-in 1s ;
+  
 }
+@keyframes fade-in {
+   from {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
+
 .Heading {
   color: #ffffff;
   margin-left: 20%;
+  cursor: pointer;
+  
 }
 
 .nav__list {
@@ -76,6 +97,8 @@ body {
   margin-bottom: 200px;
   bottom: 100px;
   z-index: 100;
+   animation: fade-in 1s ;
+  
 }
 
 .content {
@@ -93,16 +116,24 @@ body {
 }
 
 .contact-section {
+  
   display: flex;
   background-color: #50635d;
   padding: 150px;
   padding-left: 340px;
 }
+.contact-container {
+  border: 1px solid #2e3a47;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
 .contact-image {
   width: 400px;
   height: 500px;
-  border-radius: 20px;
-  margin-left: 30px;
+  border-radius: 10px 0 0 10px;
+  
 }
 .cards-container {
   display: flex;
@@ -168,7 +199,21 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
 }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 .about-image {
   width: 50%;
@@ -189,20 +234,18 @@ body {
   border: 1px solid #ccc;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0 10px 10px 0;
-  padding: 50px;
-
-  margin-bottom: 50px;
-  background-color: black;
+    padding: 50px;
+  background-color: #000000;
   color: white;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
-#name,
+#username,
 #email,
 #password {
   padding: 10px;
   margin-bottom: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;     
   border-radius: 4px;
   font-size: 16px;
 }
@@ -226,3 +269,13 @@ body {
   color: white;
   margin-top: -20px;
 }
+
+
+ /* @media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+ 
+
+} */
