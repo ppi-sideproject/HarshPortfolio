@@ -28,7 +28,7 @@
 // nolan.push("Memento");
 // nolan.pop();
 // nolan.splice(2,1);
-// nolan.shift();
+// nolan.shift();   
 // nolan.unshift("Following");
 // nolan.includes("Dunkirk");
 // for(let i = 0; i < nolan.length; i++){
@@ -92,6 +92,12 @@
         
 // });
 
+
+const dropdown = document.getElementById("menu");
+
+dropdown.addEventListener("click", () =>{
+
+})
 
 
 
@@ -166,6 +172,8 @@ const multi = document.getElementById("multi");
 const divide = document.getElementById("divide");
 const res = document.getElementById("result");
 
+
+
 add.addEventListener("click", () =>{
     const a = n1.value.trim();
     const b = n2.value.trim();
@@ -173,8 +181,9 @@ add.addEventListener("click", () =>{
         alert("Please Fill Both Number");
         return;
     }
+
     const add = Number(a)+ Number(b );
-    res.textContent = "Result:" + add;
+    res.textContent = "Result: " + add;
 });
 
 
@@ -187,7 +196,7 @@ add.addEventListener("click", () =>{
         return;
     }
     const sub = Number(a) - Number(b);
-    res.textContent = "Result:" + sub;
+    res.textContent = "Result: " + sub;
 });
 
 
@@ -199,7 +208,7 @@ add.addEventListener("click", () =>{
         return;
     }
     const multi = Number(a) * Number(b);
-    res.textContent = "Result:" + multi;
+    res.textContent = "Result: " + multi;
 });
 
 
@@ -211,7 +220,7 @@ add.addEventListener("click", () =>{
         return;
     }
     const divide = Number(a) /  Number(b);
-    res.textContent = "Result:" + divide;
+    res.textContent = "Result: " + divide;
 });
     
   
@@ -223,31 +232,5 @@ add.addEventListener("click", () =>{
 
 
 
-// multi.addEventListener("click", () =>{
-//     const a = n1.value.trim();
-//     const b = n2.value.trim();
 
-//     if(!a || !b){
-//         alert("Please Fill Both Number");
-        
-//         return;
-//     const multi = Number(a) * Number(b  );
-//     res.textContent = "Result:" + multi;
-//     }});
-
-
-
-    
-//   divide.addEventListener("click", () =>{
-//     const a = n1.value.trim();
-//     const b = n2.value.trim();
-
-//     if(!a || !b){
-//         alert("Please Fill Both Number");
-//         return;
-//     }
-//     const divide = Number(a) / Number(b);
-//     res.textContent = "Result:" + divide;
-//     });
-  
   

@@ -6,19 +6,30 @@
   <title>Portfolio</title>
   <meta name="description" content="Short description of this page.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
   <header class="header">
   <nav class="nav">
       <ul class="nav__list">
-        <li ><a class="nav_link" href="#">Home</a></li>
-        <li ><a class="nav_link" href="minicalci.html">Calculator</a></li>
-        <li ><a class="nav_link" href="#">Blog</a></li>
-         <li ><a class="nav_link" href="#">Contact</a></li>
+        <li ><a  id="home"    class="nav_link" href="#">Home</a></li>
+        <li ><a id="Calci"  class="nav_link" href="minicalci.html">Calculator</a></li>
+        <li ><a id="Blog"  class="nav_link" href="#">Blog</a></li>
+         <li ><a id="contact"  class="nav_link" href="#">Contact</a></li>
       </ul>
     </nav>
     <h1 class="Heading" id="h1">Harshvhkm</h1>
+    <i class="fa fa-bars" id="menu" style="font-size:36px "></i>
+    <div class="menu">
+    
+       <button class="menubtn" id="homebtn">Home</button>
+       <button class="menubtn" id="calcibtn">Calculator</button>
+       <button class="menubtn" id="blogbtn">Blog</button>
+       <button class="menubtn" id="contactbtn">Contact</button>
+       
+   </div>
+
   
 
   <img class="acc" src="acc.jpeg" alt="Profile Picture" class="profile-pic">
@@ -65,11 +76,11 @@
   </div>
 </section>
 <div class="contact-section">
-<div class="contact-container">
- 
- <img class="contact-image" src="https://i.pinimg.com/736x/11/c2/e6/11c2e62ea5e2195d7005ea4734f4d2e6.jpg" alt="Contact Image" class="profile-pic">  
 
-  <div class="contact-form">
+ 
+
+
+
     
   <form id="form" action="/submit_form" method="post" class="form">
   <h2>Contact Me</h2> 
@@ -83,12 +94,42 @@
     <input type="password" id="password" name="password" placeholder="Enter your password" required>
     <input class="submit-button" type="submit" value="Submit">
   </form>
-</div>  
-  </div>
-</div>
+ 
+
+ </div>
 
   <footer class="footer">
-    <p>&copy; 2025 Harsh </p>
+   <h1>Harshvhkm</h1>
+  <div class="footerp">
+ 
+    <li ><a class="footerp1" href="#">&#9737; Web Development</a></li>
+    <li ><a class="footerp2" href="#">&#9737;Mobile App</a></li>
+    <li ><a class="footerp3" href="#">&#9737;UI/UX Design</a></li>
+  </div>
+  <hr>
+  <div>
+  <ul class="foot_list">
+    <li ><a class="footer_link" href="#">Home</a></li>
+    <li ><a class="footer_link" href="minicalci.html">Calculator</a></li>
+    <li ><a class="footer_link" href="#">Blog</a></li>
+    <li ><a class="footer_link" href="#">Contact</a></li>
+  <ul>
+  </div>
+
+  <div  class="icon">
+     <i class="fa fa-instagram" style="font-size:36px"></i>
+    <i class="fa fa-twitter" style="font-size:36px"></i>
+    <i class="fa fa-github" style="font-size:36px"></i>
+    <i class="fa fa-youtube-play" style="font-size:36px"></i>
+   </div>   
+
+
+   <div  class="Privacy">
+   <a class="Privacy_Policy" href="#">Privacy Policy  </a> |
+   <a class="Trems_Conditions" href="Trems_Conditions"> Trems & Conditions</a> |
+   <a class="Disclosures" href="Disclosures">Disclosures</a>
+   </div>
+    <h4 class="copy">&copy; 2025 HarshVhkm All Rights Reserved.</h4>
 </footer>
 
 
